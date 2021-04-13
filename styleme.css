@@ -1,7 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+:root {
+	--primary-color: #000000;
+	--secondary-color: #3730a3;
+	--border-color: #4c1d95;
+	--link-color: #111827;
+	--button-click: #1f2937;
+	--hover-color: #008000;
+}
+
 /* background immage */
 html {
 	background: url(Image/yodabg.jpg) no-repeat center center fixed;
 	background-size: cover;
 	height: 100%;
 	overflow: hidden;
+}
+
+body {
+	font-family: 'New Tegomin', serif;
+	margin-top: 150px;
+	margin-left: 20px;
+}
+
+h1 {
+	color: var(--primary-color);
+}
+
+.outcome-heading {
+	color: var(--primary-color);
+	font-size: 25px;
+}
+
+::placeholder {
+	color: var(--primary-color);
+}
+/* textbox */
+#textArea {
+	font-family: 'New Tegomin', serif;
+	font-size: larger;
+	background: transparent;
+	border: 3px dashed var(--border-color);
+	height: 96px;
+	width: 293px;
+	color: var(--secondary-color);
+}
+
+/* button */
+#tapme:hover {
+	font-family: 'New Tegomin', serif;
+	background-color: var(--hover-color);
+}
+
+#tapme {
+	background-color: var(--button-click);
+	font-family: 'Indie Flower', cursive;
+	transition-duration: 0.5s;
+	cursor: grab;
+	font-size: 18px;
+	border: none;
+	border-radius: 16px;
+}
+
+/* output div */
+div #output {
+	font-size: larger;
+	border: 3px dashed var(--border-color);
+	height: 96px;
+	width: 293px;
+	display: block;
+	color: var(--secondary-color);
+}
+
+p {
+	padding-top: 40px;
+	text-align: right;
+	color: whitesmoke;
+}
+
+p a {
+	color: whitesmoke;
 }
