@@ -5,15 +5,21 @@ var div = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/yoda.json"
 
-function getTranslationURL(input) {
-    return serverURL + "?" + "text=" + input
-}
+// function getTranslationURL(input) {
+//     return serverURL + "?" + "text=" + input
+// }
+
+var getTranslationURL = input => `${serverURL}?text=${input}`; 
 
 // error message 
-function errorHandler(error) {
-    console.log("error occured", error);
-    alert("Wrong with server, something! Again after some time, try.")
-}
+// function errorHandler(error) {
+//     console.log("error occured", error);
+//     alert("Wrong with server, something! Again after some time, try.")
+// }
+
+var errorHandler = error => {
+console.log(`error occured ${error}`);
+alert("Wrong with server, something! Again after some time, try.")}
 
 // taking input
 function clickHandler() {
